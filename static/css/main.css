@@ -7,3 +7,13 @@ body {
   height: 360px;
   object-fit: cover;
 }
+
+#job-item {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+h4 {
+  color: darkgray;
+  margin-bottom: 4px;
+}
