@@ -18,3 +18,7 @@ h4 {
   color: darkgray;
   margin-bottom: 4px;
 }
+
+.empty {
+  height: 56px;
+}
