@@ -12,11 +12,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">
       <h1 class="text-center mt-4 mb-4">{{company_name}} Careers</h1>
       <img class="img-fluid" id="banner" src="https://jovian-flask-site.blannc.repl.co/static/images/banner.jpg">
       <h2 class="text-center mt-4 mb-4">About Jovian</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum varius nulla, eu eleifend ligula mollis eget. Aenean non sapien a dolor interdum mattis. Praesent volutpat, ex a euismod molestie, metus nulla rhoncus nisi, vitae volutpat metus magna sed est. Phasellus luctus tellus nec ipsum consectetur blandit. Donec at euismod magna. Nunc ultricies turpis in ex faucibus condimentum. Morbi tincidunt, augue vel fermentum consequat, mauris felis fermentum sem, eget porttitor magna quam nec sem.</p>
+      <div class="row">
+        <div class="col-md-6">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum varius nulla, eu eleifend ligula mollis eget. Aenean non sapien a dolor interdum mattis. Praesent volutpat, ex a euismod molestie, metus nulla rhoncus nisi, vitae volutpat metus magna sed est. Phasellus luctus tellus nec ipsum consectetur blandit. Donec at euismod magna. Nunc ultricies turpis in ex faucibus condimentum. Morbi tincidunt, augue vel fermentum consequat, mauris felis fermentum sem, eget porttitor magna quam nec sem.</p></div>
+        <div class="d-none d-md-block col-md-6">
+          <img id="people-img" src="/static/images/people.jpg">
+        </div>
+      </div>
       <h2 class="text-center mt-4 mb-4">Open Positions</h2>
       <p>
         {% for job in jobs %}
@@ -26,7 +33,7 @@
       <div class="text-center mt-4 mb-4">
         <button class="btn btn-primary btn-lg">Contact Us</button>
       </div>
-      <p class="text-center mt-4 mb-4">&copy; 2022 Jovian</p>
     </div>
   </body>
+  {% include 'footer.html' %}
 </html>
